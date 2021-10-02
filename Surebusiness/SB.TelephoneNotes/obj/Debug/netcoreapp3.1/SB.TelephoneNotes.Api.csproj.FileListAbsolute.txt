@@ -79,3 +79,7 @@ C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\r
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes\bin\Debug\netcoreapp3.1\Tynamix.ObjectFiller.dll

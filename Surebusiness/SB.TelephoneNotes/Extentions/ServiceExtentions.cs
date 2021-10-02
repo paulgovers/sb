@@ -6,11 +6,19 @@ using SB.TelephoneNotes.BLL.Interfaces;
 using SB.TelephoneNotes.DAL.EF;
 using Microsoft.EntityFrameworkCore;
 using SB.TelephoneNotes.DAL.Interfaces;
+using FluentValidation;
+using SB.TelephoneNotes.BLL.Interfaces.Commands;
+using SB.TelephoneNotes.BLL.Validators;
 
 namespace SB.TelephoneNotes.Api.Extentions
 {
     public static class ServiceExtentions
     {
+        public static IServiceCollection ConfigureFluentValidation(this IServiceCollection services)
+        {
+            services.AddTransient<IValidator<CreatePhoneNote>, CreatePhoneNoteValidator>();
+            return services;
+        }
         public static IServiceCollection ConfigureSwagger(this IServiceCollection services)
         {
             services

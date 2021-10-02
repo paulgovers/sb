@@ -1,7 +1,6 @@
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.deps.json
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.dll
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.pdb
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.csproj.AssemblyReference.cache
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.AssemblyInfoInputs.cache
 C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.BLL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.BLL.Interfaces.AssemblyInfo.cs

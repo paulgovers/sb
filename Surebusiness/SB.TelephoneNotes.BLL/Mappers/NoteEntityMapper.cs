@@ -13,6 +13,9 @@ namespace SB.TelephoneNotes.BLL.Mappers
         }
         public static PhoneNote MapToDomainModel(this NoteEntity noteEntity)
         {
+            if (noteEntity == null)
+                return null;
+
             return new PhoneNote
             {
                 Id = noteEntity.Id,

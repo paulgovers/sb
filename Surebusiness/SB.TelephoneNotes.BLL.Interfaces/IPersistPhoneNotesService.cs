@@ -6,7 +6,7 @@ namespace SB.TelephoneNotes.BLL.Interfaces
 {
     public interface IPersistPhoneNotesService
     {
-        Task<PhoneNote> Save(CreatePhoneNoteCommand createPhoneNoteCommand);
+        Task<PhoneNote> Save(CreatePhoneNote createPhoneNoteCommand);
         Task<PhoneNote> UpdateAssignedTo(int id, string assignedTo);
         Task<PhoneNote> UpdateStatus(int id, string status);
     }

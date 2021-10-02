@@ -1,6 +1,6 @@
 ﻿namespace SB.TelephoneNotes.BLL.Interfaces.Commands
 {
-    public class CreatePhoneNoteCommand
+    public class CreatePhoneNote
     {
         public string Name { get; set; }
         public string Notes { get; set; }

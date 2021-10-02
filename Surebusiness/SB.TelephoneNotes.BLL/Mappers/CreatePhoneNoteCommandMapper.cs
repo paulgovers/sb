@@ -5,7 +5,7 @@ namespace SB.TelephoneNotes.BLL.Mappers
 {
     public static class CreatePhoneNoteCommandMapper
     {
-        public static NoteEntity MapToNoteEntity(this CreatePhoneNoteCommand createPhoneNoteCommand)
+        public static NoteEntity MapToNoteEntity(this CreatePhoneNote createPhoneNoteCommand)
         {
             return new NoteEntity()
             {

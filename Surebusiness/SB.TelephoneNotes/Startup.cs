@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,8 @@ namespace SB.TelephoneNotes
                 .ConfigureSwagger()
                 .ConfigureServices(Configuration)
                 .ConfigureRepositories(Configuration)
+               // .AddFluentValidation()
+                .ConfigureFluentValidation()
                 .AddControllers();
         }
 

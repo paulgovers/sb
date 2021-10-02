@@ -16,7 +16,7 @@ namespace SB.TelephoneNotes.DAL.EF.Repositories
         }
         public async Task<List<NoteEntity>> GetAll()
         {
-            return await _phoneNotesDbContext.Notes.OrderByDescending(x=>x.Id).ToListAsync();
+            return await _phoneNotesDbContext.Notes.OrderBy(x=>x.Id).ToListAsync();
         }
 
         /* public IQueryable<NoteEntity> GetWhere(Expression<Func<NoteEntity, bool>> predicate)

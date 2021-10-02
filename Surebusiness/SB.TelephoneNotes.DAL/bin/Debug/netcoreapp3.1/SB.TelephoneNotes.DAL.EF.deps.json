@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
-          "SB.TelephoneNotes.DAL.Interfaces": "1.0.0"
+          "SB.TelephoneNotes.DAL.Interfaces": "1.0.0",
+          "Tynamix.ObjectFiller": "1.5.6"
         },
         "runtime": {
           "SB.TelephoneNotes.DAL.EF.dll": {}
@@ -1056,6 +1057,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Tynamix.ObjectFiller/1.5.6": {
+        "runtime": {
+          "lib/netstandard2.0/Tynamix.ObjectFiller.dll": {
+            "assemblyVersion": "1.5.6.0",
+            "fileVersion": "1.5.6.0"
+          }
+        }
+      },
       "SB.TelephoneNotes.DAL.Interfaces/1.0.0": {
         "runtime": {
           "SB.TelephoneNotes.DAL.Interfaces.dll": {}
@@ -1726,6 +1735,13 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Tynamix.ObjectFiller/1.5.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8bU4ypm4hHMyTvqAOG2CKnWk8npusJRmJOVGtdwzX8TvYLcv/daFMhmIeucrXSFmXiDGbtNgee/lD1VYy4/zPg==",
+      "path": "tynamix.objectfiller/1.5.6",
+      "hashPath": "tynamix.objectfiller.1.5.6.nupkg.sha512"
     },
     "SB.TelephoneNotes.DAL.Interfaces/1.0.0": {
       "type": "project",

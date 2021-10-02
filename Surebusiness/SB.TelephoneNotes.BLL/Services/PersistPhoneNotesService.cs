@@ -14,7 +14,7 @@ namespace SB.TelephoneNotes.BLL.Services
         {
             _notesRepository = notesRepository;
         }
-        public async Task<PhoneNote> Save(CreatePhoneNoteCommand createPhoneNoteCommand)
+        public async Task<PhoneNote> Save(CreatePhoneNote createPhoneNoteCommand)
         {
             var noteEntity = createPhoneNoteCommand.MapToNoteEntity();
             noteEntity.CreateDate = System.DateTime.Now;

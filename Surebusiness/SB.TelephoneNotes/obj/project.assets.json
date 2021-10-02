@@ -2,6 +2,44 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentValidation/10.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/10.3.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.3.3",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/10.3.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.3.3",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -1657,6 +1695,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Tynamix.ObjectFiller/1.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tynamix.ObjectFiller.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tynamix.ObjectFiller.dll": {}
+        }
+      },
       "YamlDotNet/9.1.4": {
         "type": "package",
         "compile": {
@@ -1670,6 +1717,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "FluentValidation": "10.3.3",
           "SB.TelephoneNotes.BLL.Interfaces": "1.0.0",
           "SB.TelephoneNotes.DAL.Interfaces": "1.0.0"
         },
@@ -1696,7 +1744,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
-          "SB.TelephoneNotes.DAL.Interfaces": "1.0.0"
+          "SB.TelephoneNotes.DAL.Interfaces": "1.0.0",
+          "Tynamix.ObjectFiller": "1.5.6"
         },
         "compile": {
           "bin/placeholder/SB.TelephoneNotes.DAL.EF.dll": {}
@@ -1718,6 +1767,56 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.3.3": {
+      "sha512": "sgRC+7q4mnmDHE9ehk2cvb+FDTy/gtw5iBoKFY3FVp1ZwFsLS0kIcdSpNlCO3XyyNIzZI2ca8I/YiFG9pM6x0Q==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/10.3.3": {
+      "sha512": "DEh0ibCjH2kL5sk9yHcYMFrARUZ+/7iisW900odFUh3FV2zS5A/7hjNjnHSv2Imgq4gIQmpajamMm1uFDrBBWA==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.3.3": {
+      "sha512": "kol9KlAn2pijRa0vLCzAPcp8Ql8yZdIRrO80eMVLswXQ0v6ai+ihOdqF/qPJCMXNWBnTcTGYjp1tZtizPWO+Cg==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -6123,6 +6222,34 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Tynamix.ObjectFiller/1.5.6": {
+      "sha512": "8bU4ypm4hHMyTvqAOG2CKnWk8npusJRmJOVGtdwzX8TvYLcv/daFMhmIeucrXSFmXiDGbtNgee/lD1VYy4/zPg==",
+      "type": "package",
+      "path": "tynamix.objectfiller/1.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Tynamix.ObjectFiller.dll",
+        "lib/net35/Tynamix.ObjectFiller.xml",
+        "lib/net40/Tynamix.ObjectFiller.dll",
+        "lib/net40/Tynamix.ObjectFiller.xml",
+        "lib/net45/Tynamix.ObjectFiller.dll",
+        "lib/net45/Tynamix.ObjectFiller.xml",
+        "lib/net451/Tynamix.ObjectFiller.dll",
+        "lib/net451/Tynamix.ObjectFiller.xml",
+        "lib/net452/Tynamix.ObjectFiller.dll",
+        "lib/net452/Tynamix.ObjectFiller.xml",
+        "lib/netstandard1.0/Tynamix.ObjectFiller.dll",
+        "lib/netstandard1.0/Tynamix.ObjectFiller.xml",
+        "lib/netstandard1.3/Tynamix.ObjectFiller.dll",
+        "lib/netstandard1.3/Tynamix.ObjectFiller.xml",
+        "lib/netstandard2.0/Tynamix.ObjectFiller.dll",
+        "lib/netstandard2.0/Tynamix.ObjectFiller.xml",
+        "logo.png",
+        "tynamix.objectfiller.1.5.6.nupkg.sha512",
+        "tynamix.objectfiller.nuspec"
+      ]
+    },
     "YamlDotNet/9.1.4": {
       "sha512": "dVVZVhQxTI4xTNc9YorE+RruBFPPYKP44kMijE6Z5OQQE7zK+SEmh2sPm091CrTYVz1jjIuXKIBm1kFLrlsQJg==",
       "type": "package",
@@ -6171,6 +6298,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "FluentValidation.AspNetCore >= 10.3.3",
       "NSwag.AspNetCore >= 13.13.2",
       "SB.TelephoneNotes.BLL >= 1.0.0",
       "SB.TelephoneNotes.BLL.Interfaces >= 1.0.0",
@@ -6234,6 +6362,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[10.3.3, )"
+          },
           "NSwag.AspNetCore": {
             "target": "Package",
             "version": "[13.13.2, )"

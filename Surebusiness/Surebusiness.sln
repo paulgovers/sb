@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.TelephoneNotes.Api", "SB.TelephoneNotes\SB.TelephoneNotes.Api.csproj", "{EF5FBE86-3462-4C2B-B0D2-A651C5E1516E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.TelephoneNotes.Api", "SB.TelephoneNotes\SB.TelephoneNotes.Api.csproj", "{EF5FBE86-3462-4C2B-B0D2-A651C5E1516E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.TelephoneNotes.BLL", "SB.TelephoneNotes.BLL\SB.TelephoneNotes.BLL.csproj", "{F5F97A94-A845-49BF-80F9-6D72519EF1FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.TelephoneNotes.BLL", "SB.TelephoneNotes.BLL\SB.TelephoneNotes.BLL.csproj", "{F5F97A94-A845-49BF-80F9-6D72519EF1FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.TelephoneNotes.DAL.EF", "SB.TelephoneNotes.DAL\SB.TelephoneNotes.DAL.EF.csproj", "{6FF733CC-9C17-4550-94C2-BF0094183C77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.TelephoneNotes.DAL.EF", "SB.TelephoneNotes.DAL\SB.TelephoneNotes.DAL.EF.csproj", "{6FF733CC-9C17-4550-94C2-BF0094183C77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.TelephoneNotes.DAL.Interfaces", "SB.TelephoneNotes.DAL.Interfaces\SB.TelephoneNotes.DAL.Interfaces.csproj", "{2F73EE99-8ACF-4250-B661-EF8E3EAE72C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.TelephoneNotes.DAL.Interfaces", "SB.TelephoneNotes.DAL.Interfaces\SB.TelephoneNotes.DAL.Interfaces.csproj", "{2F73EE99-8ACF-4250-B661-EF8E3EAE72C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SB.TelephoneNotes.BLL.Interfaces", "SB.TelephoneNotes.BLL.Interfaces\SB.TelephoneNotes.BLL.Interfaces.csproj", "{9984266D-003D-406A-BD7D-B391868117D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SB.TelephoneNotes.BLL.Interfaces", "SB.TelephoneNotes.BLL.Interfaces\SB.TelephoneNotes.BLL.Interfaces.csproj", "{9984266D-003D-406A-BD7D-B391868117D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE1FEB10-B196-48F2-B536-08907412D61F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

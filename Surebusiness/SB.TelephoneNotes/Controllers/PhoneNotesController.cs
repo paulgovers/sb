@@ -5,9 +5,9 @@ using SB.TelephoneNotes.Api.Models;
 using SB.TelephoneNotes.BLL.Interfaces;
 using SB.TelephoneNotes.BLL.Interfaces.Commands;
 using SB.TelephoneNotes.BLL.Interfaces.Models;
+using SB.TelephoneNotes.BLL.Validators;
 using System;
 using System.Threading.Tasks;
-
 
 namespace SB.TelephoneNotes.Controllers
 {
@@ -42,15 +42,13 @@ namespace SB.TelephoneNotes.Controllers
             }
         }
         [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(PhoneNote), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(bool), StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetById(int id)
         {
             var phoneNote = await _queryPhoneNotesService.GetById(id);
             if(phoneNote == null)
-            {
-                return NotFound();
-            }
+                return NotFound(false);
 
             return Ok(phoneNote);
         }
@@ -58,11 +56,15 @@ namespace SB.TelephoneNotes.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(PhoneNote), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
-        [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Post([FromBody]CreatePhoneNoteCommand createPhoneNoteCommand)
+        [ProducesResponseType(typeof(BadRequestModel), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Post([FromBody]CreatePhoneNote createPhoneNoteCommand)
         {
             try
             {
+                var validateResult = new CreatePhoneNoteValidator().Validate(createPhoneNoteCommand);
+                if (!validateResult.IsValid)
+                    return BadRequest(new BadRequestModel(validateResult));
+
                 var createdPhoneNote = await _persistPhoneNotesService.Save(createPhoneNoteCommand);
                 return CreatedAtAction(nameof(GetById), new { id = createdPhoneNote.Id }, createdPhoneNote);
             }
@@ -73,7 +75,7 @@ namespace SB.TelephoneNotes.Controllers
             }
         }
 
-        [HttpPut]
+    /*    [HttpPut]
         [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Put()
         {
@@ -86,6 +88,6 @@ namespace SB.TelephoneNotes.Controllers
                 _logger.LogError(exception, $"Failed to update notes");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Onverwachte fout opgetreden");
             }
-        }
+        }*/
     }
 }

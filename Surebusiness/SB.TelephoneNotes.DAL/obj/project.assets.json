@@ -1483,6 +1483,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Tynamix.ObjectFiller/1.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tynamix.ObjectFiller.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tynamix.ObjectFiller.dll": {}
+        }
+      },
       "SB.TelephoneNotes.DAL.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5668,6 +5677,34 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Tynamix.ObjectFiller/1.5.6": {
+      "sha512": "8bU4ypm4hHMyTvqAOG2CKnWk8npusJRmJOVGtdwzX8TvYLcv/daFMhmIeucrXSFmXiDGbtNgee/lD1VYy4/zPg==",
+      "type": "package",
+      "path": "tynamix.objectfiller/1.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Tynamix.ObjectFiller.dll",
+        "lib/net35/Tynamix.ObjectFiller.xml",
+        "lib/net40/Tynamix.ObjectFiller.dll",
+        "lib/net40/Tynamix.ObjectFiller.xml",
+        "lib/net45/Tynamix.ObjectFiller.dll",
+        "lib/net45/Tynamix.ObjectFiller.xml",
+        "lib/net451/Tynamix.ObjectFiller.dll",
+        "lib/net451/Tynamix.ObjectFiller.xml",
+        "lib/net452/Tynamix.ObjectFiller.dll",
+        "lib/net452/Tynamix.ObjectFiller.xml",
+        "lib/netstandard1.0/Tynamix.ObjectFiller.dll",
+        "lib/netstandard1.0/Tynamix.ObjectFiller.xml",
+        "lib/netstandard1.3/Tynamix.ObjectFiller.dll",
+        "lib/netstandard1.3/Tynamix.ObjectFiller.xml",
+        "lib/netstandard2.0/Tynamix.ObjectFiller.dll",
+        "lib/netstandard2.0/Tynamix.ObjectFiller.xml",
+        "logo.png",
+        "tynamix.objectfiller.1.5.6.nupkg.sha512",
+        "tynamix.objectfiller.nuspec"
+      ]
+    },
     "SB.TelephoneNotes.DAL.Interfaces/1.0.0": {
       "type": "project",
       "path": "../SB.TelephoneNotes.DAL.Interfaces/SB.TelephoneNotes.DAL.Interfaces.csproj",
@@ -5678,7 +5715,8 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
-      "SB.TelephoneNotes.DAL.Interfaces >= 1.0.0"
+      "SB.TelephoneNotes.DAL.Interfaces >= 1.0.0",
+      "Tynamix.ObjectFiller >= 1.5.6"
     ]
   },
   "packageFolders": {
@@ -5735,6 +5773,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[5.0.10, )"
+          },
+          "Tynamix.ObjectFiller": {
+            "target": "Package",
+            "version": "[1.5.6, )"
           }
         },
         "imports": [
