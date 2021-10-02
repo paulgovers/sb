@@ -1,10 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SB.TelephoneNotes.DAL.Interfaces.Entities
 {
-    //[Table("Notes", Schema = "dbo")]
     public class NoteEntity
     {
         [Key]

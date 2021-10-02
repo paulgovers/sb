@@ -10,8 +10,7 @@ namespace SB.TelephoneNotes.DAL.EF
            
         }
         public DbSet<NoteEntity> Notes { get; set; }
-
-        
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<NoteEntity>().ToTable("Notes");

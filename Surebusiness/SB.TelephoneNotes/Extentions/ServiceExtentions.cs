@@ -54,7 +54,6 @@ namespace SB.TelephoneNotes.Api.Extentions
                 {
                     options.UseSqlServer(phoneNotesConnectionString);
                 });
-                //.AddScoped<DbContext, PhoneNotesDbContext>();
 
             services
                .AddScoped<INotesRepository,NotesRepository>();

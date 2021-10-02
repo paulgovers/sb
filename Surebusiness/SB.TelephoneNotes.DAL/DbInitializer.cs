@@ -11,13 +11,12 @@ namespace SB.TelephoneNotes.DAL.EF
         {
             context.Database.EnsureCreated();
 
-            // Look for any students.
             if (context.Notes.Any())
             {
                 return;   // DB has been seeded
             }
-            Filler<NoteEntity> pFiller = new Filler<NoteEntity>();
-            pFiller.Setup(true)
+            Filler<NoteEntity> generatedPhoneNotes = new Filler<NoteEntity>();
+            generatedPhoneNotes.Setup(true)
               .OnProperty(x => x.Name).Use<RealNames>()
               .OnProperty(x => x.AssignedTo).Use(new RandomListItem<string>("Kees", "Jan", "Willem", "Piet"))
               .OnProperty(x => x.Status).Use(new RandomListItem<string>("inbehandeling", "nieuw", "afgehandeld"))
@@ -26,7 +25,7 @@ namespace SB.TelephoneNotes.DAL.EF
               .OnProperty(x => x.Notes).Use(new Lipsum(LipsumFlavor.LoremIpsum,20, 30, 2));
 
 
-            var Notes = pFiller.Create(100);
+            var Notes = generatedPhoneNotes.Create(100);
 
             foreach (NoteEntity note in Notes)
             {
