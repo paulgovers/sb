@@ -1,9 +1,0 @@
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.deps.json
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.dll
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.pdb
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.AssemblyInfoInputs.cache
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.AssemblyInfo.cs
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.csproj.CoreCompileInputs.cache
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.dll
-C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL.Interfaces\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.pdb
