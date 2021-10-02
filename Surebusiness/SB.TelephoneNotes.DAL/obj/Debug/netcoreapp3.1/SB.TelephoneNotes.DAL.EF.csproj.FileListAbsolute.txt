@@ -1,0 +1,13 @@
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.deps.json
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.pdb
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.csproj.AssemblyReference.cache
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.AssemblyInfoInputs.cache
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.AssemblyInfo.cs
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.csproj.CoreCompileInputs.cache
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.pdb
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.dll
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\bin\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.Interfaces.pdb
+C:\Develop\Surebusiness\Surebusiness\SB.TelephoneNotes.DAL\obj\Debug\netcoreapp3.1\SB.TelephoneNotes.DAL.EF.csproj.CopyComplete
