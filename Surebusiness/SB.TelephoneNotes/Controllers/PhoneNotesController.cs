@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SB.TelephoneNotes.Api.Models;
@@ -75,19 +76,30 @@ namespace SB.TelephoneNotes.Controllers
             }
         }
 
-    /*    [HttpPut]
+        [HttpPatch("{id}")]
+        [ProducesResponseType(typeof(PhoneNote), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Put()
+        [ProducesResponseType(typeof(BadRequestModel), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Patch(int id, [FromBody] JsonPatchDocument<object> phoneNotePatchDocument)
         {
             try
             {
-                return Ok();
+                if (phoneNotePatchDocument == null)
+                    return BadRequest(new BadRequestModel("JsonPatchDocument missing"));
+
+                var phoneNote = await _queryPhoneNotesService.GetById(id);
+                if (phoneNote == null)
+                    return NotFound(false);
+
+                var savedPhoneNote = await _persistPhoneNotesService.Patch(id, phoneNotePatchDocument);
+
+                return Ok(savedPhoneNote);
             }
             catch (Exception exception)
             {
-                _logger.LogError(exception, $"Failed to update notes");
+                _logger.LogError(exception, $"Failed to patch phone note with id {id}");
                 return StatusCode(StatusCodes.Status500InternalServerError, "Onverwachte fout opgetreden");
             }
-        }*/
+        }
     }
 }

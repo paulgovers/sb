@@ -26,7 +26,7 @@ namespace SB.TelephoneNotes
                 .ConfigureRepositories(Configuration)
                // .AddFluentValidation()
                 .ConfigureFluentValidation()
-                .AddControllers();
+                .AddControllers().AddNewtonsoftJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

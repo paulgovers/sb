@@ -6,6 +6,10 @@ namespace SB.TelephoneNotes.Api.Models
     public class BadRequestModel
     {
         public string Description { get; set; }
+        public BadRequestModel(string description)
+        {
+            Description = description;
+        }
         public BadRequestModel(ValidationResult validationResult)
         {
             ValidationMessages = new List<string>();
