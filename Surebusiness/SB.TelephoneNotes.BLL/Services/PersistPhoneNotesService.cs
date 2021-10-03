@@ -5,7 +5,6 @@ using SB.TelephoneNotes.BLL.Mappers;
 using System.Threading.Tasks;
 using SB.TelephoneNotes.BLL.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
-
 namespace SB.TelephoneNotes.BLL.Services
 {
     public class PersistPhoneNotesService : IPersistPhoneNotesService
@@ -15,10 +14,18 @@ namespace SB.TelephoneNotes.BLL.Services
         {
             _notesRepository = notesRepository;
         }
-        public async Task<PhoneNote> Patch(int id, JsonPatchDocument<object> patchPhoneNoteJsonPatchDocument)
+        public async Task<PhoneNote> Patch(int id, JsonPatchDocument<PatchPhoneNote> patchPhoneNoteJsonPatchDocument)
         {
             var phoneNoteEntity = await _notesRepository.Get(id);
-            patchPhoneNoteJsonPatchDocument.ApplyTo(phoneNoteEntity);
+            var patchPhoneNote = new PatchPhoneNote
+            {
+                AssignedTo = phoneNoteEntity.AssignedTo,
+                Status = phoneNoteEntity.Status
+            };
+            patchPhoneNoteJsonPatchDocument.ApplyTo(patchPhoneNote);
+            phoneNoteEntity.AssignedTo = patchPhoneNote.AssignedTo;
+            phoneNoteEntity.Status = patchPhoneNote.Status;
+
             await _notesRepository.Update(phoneNoteEntity);
             return phoneNoteEntity.MapToDomainModel();
         }

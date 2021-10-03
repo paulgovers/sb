@@ -80,7 +80,7 @@ namespace SB.TelephoneNotes.Controllers
         [ProducesResponseType(typeof(PhoneNote), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(typeof(BadRequestModel), StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Patch(int id, [FromBody] JsonPatchDocument<object> phoneNotePatchDocument)
+        public async Task<IActionResult> Patch(int id, [FromBody] JsonPatchDocument<PatchPhoneNote> phoneNotePatchDocument)
         {
             try
             {

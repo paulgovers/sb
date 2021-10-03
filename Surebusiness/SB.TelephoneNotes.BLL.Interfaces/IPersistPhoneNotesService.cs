@@ -10,6 +10,6 @@ namespace SB.TelephoneNotes.BLL.Interfaces
         Task<PhoneNote> Save(CreatePhoneNote createPhoneNoteCommand);
         Task<PhoneNote> UpdateAssignedTo(int id, string assignedTo);
         Task<PhoneNote> UpdateStatus(int id, string status);
-        Task<PhoneNote> Patch(int id, JsonPatchDocument<object> patchPhoneNoteJsonPatchDocument);
+        Task<PhoneNote> Patch(int id, JsonPatchDocument<PatchPhoneNote> patchPhoneNoteJsonPatchDocument);
     }
 }
