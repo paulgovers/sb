@@ -8,5 +8,7 @@ namespace SB.TelephoneNotes.BLL.Interfaces
     {
         Task<List<PhoneNote>> GetAll();
         Task<PhoneNote> GetById(int id);
+        PagedList<PhoneNote> GetNotes(NotesFilter notesFilter);
+
     }
 }

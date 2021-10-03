@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using SB.TelephoneNotes.Api.Models;
 using SB.TelephoneNotes.BLL.Interfaces;
 using SB.TelephoneNotes.BLL.Interfaces.Commands;
@@ -27,6 +28,34 @@ namespace SB.TelephoneNotes.Controllers
             _logger = logger;
             _persistPhoneNotesService = persistPhoneNotesService;
             _queryPhoneNotesService = queryPhoneNotesService;
+        }
+
+        [HttpGet("filter")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(PagedList<PhoneNote>), StatusCodes.Status200OK)]
+        public IActionResult GetFilter([FromQuery] NotesFilter notesFilter)
+        {
+            try
+            {
+                var notes = _queryPhoneNotesService.GetNotes(notesFilter);
+                var metadata = new
+                {
+                    notes.TotalCount,
+                    notes.PageSize,
+                    notes.CurrentPage,
+                    notes.TotalPages,
+                    notes.HasNext,
+                    notes.HasPrevious
+                };
+                Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
+
+                return Ok(notes);
+            }
+            catch (Exception exception)
+            {
+                _logger.LogError(exception, $"Failed to get notes");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Onverwachte fout opgetreden");
+            }
         }
 
         [HttpGet]

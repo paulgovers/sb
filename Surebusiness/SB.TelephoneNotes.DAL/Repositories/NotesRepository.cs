@@ -18,12 +18,7 @@ namespace SB.TelephoneNotes.DAL.EF.Repositories
         {
             return await _phoneNotesDbContext.Notes.OrderBy(x=>x.Id).ToListAsync();
         }
-
-        /* public IQueryable<NoteEntity> GetWhere(Expression<Func<NoteEntity, bool>> predicate)
-         {
-             return _phoneNotesDbContext.Set<NoteEntity>().Where(predicate).AsNoTracking();
-         }*/
-
+    
         public async Task<NoteEntity> Get(int id)
         {
             return await _phoneNotesDbContext.Notes.SingleOrDefaultAsync(x => x.Id == id);
@@ -41,6 +36,11 @@ namespace SB.TelephoneNotes.DAL.EF.Repositories
             _phoneNotesDbContext.Update(noteEntity);
             await _phoneNotesDbContext.SaveChangesAsync();
             return noteEntity;
+        }
+
+        public IQueryable<NoteEntity> GetIQueryable()
+        {
+            return _phoneNotesDbContext.Notes.AsNoTracking();
         }
     }
 }
