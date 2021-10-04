@@ -25,14 +25,14 @@ De volgende stappen moeten doorlopen worden om de API te draaien lokaal op je pc
 De eerste keer nadat de applicatie start, zal er een tabel "Notes" worden aangemaakt en gevuld worden met 100 notities.
 
 # Api Documentatie
-Er is Api Swagger documentatie beschikbaar en tevens de mogelijkheid om met deze interface de API endpoint aan te roepen
+Er is Api Swagger documentatie beschikbaar en tevens de mogelijkheid om met swagger de telefoonnotities API endpoint aan te roepen
 <br/>Swagger endpoint: https://localhost:44330/swagger
 <br/>De swagger documentatie beschrijft alle endpoints, er staat ook beschreven hoe je de endpoints kunt aanroepen maar ook welke responses je kunt verwachten en met de bijbehorende Http response code.
 
->Api staat ook online, de swagger documentatie is te vinden op de volgende locatie:
+>Om een kickstart te geven, is de API ook online beschikbaar, de swagger documentatie is te vinden op de volgende locatie:
 > https://surebusiness.paulgovers.nl/swagger
 
-> Base URL van de API:
+> Base URL van de online telefoonnotities API:
 > https://surebusiness.paulgovers.nl/api <br/>
 > voorbeeld: https://surebusiness.paulgovers.nl/api/v1/phonenotes
 
