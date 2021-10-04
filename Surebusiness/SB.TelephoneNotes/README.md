@@ -2,11 +2,12 @@
 RESTful API voor het bijhouden van telefoonnotities.<br/>
 Notitie bestaan uit de volgende velden: Naam, notitie, telefoonnummer, status(nieuw | inbehandeling | afgehandeld), toegewezen medewerker
 
-Het is tevens mogelijk:
+De volgende acties worden ondersteund:
 * Notitie toevoegen
-* Status aanpassen
-* Toegewezen medewerker aanpassen
+* Waarde van "Status" bijwerken
+* Waarde van "Toegewezen medewerker" bijwerken
 * Lijst van alle notities ophalen
+* Lijst van alle notities ophalen, met filter en gepagineerd resultaat
 
 # Requirements
 * .NET Core 3.1
