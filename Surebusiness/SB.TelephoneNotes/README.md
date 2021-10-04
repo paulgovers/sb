@@ -30,7 +30,7 @@ Er is Api Swagger documentatie beschikbaar en tevens de mogelijkheid om met deze
 <br/>De swagger documentatie beschrijft alle endpoints, er staat ook beschreven hoe je de endpoints kunt aanroepen maar ook welke responses je kunt verwachten en met de bijbehorende Http response code.
 
 >Api staat ook online, de swagger documentatie is te vinden op de volgende locatie:
-> <a target="_blank" href="https://surebusiness.paulgovers.nl/swagger">https://surebusiness.paulgovers.nl/swagger<a/>
+> https://surebusiness.paulgovers.nl/swagger
 
 > Base URL van de API:
 > https://surebusiness.paulgovers.nl/api <br/>
