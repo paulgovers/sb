@@ -24,7 +24,6 @@ namespace SB.TelephoneNotes
                 .ConfigureSwagger()
                 .ConfigureServices(Configuration)
                 .ConfigureRepositories(Configuration)
-               // .AddFluentValidation()
                 .ConfigureFluentValidation()
                 .AddControllers().AddNewtonsoftJson();
         }
