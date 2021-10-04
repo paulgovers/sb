@@ -8,6 +8,7 @@ using SB.TelephoneNotes.BLL.Interfaces.Commands;
 using SB.TelephoneNotes.BLL.Interfaces.Models;
 using SB.TelephoneNotes.BLL.Validators;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace SB.TelephoneNotes.Controllers
@@ -31,6 +32,7 @@ namespace SB.TelephoneNotes.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(typeof(IEnumerable<PhoneNote>), StatusCodes.Status200OK)]
         public async Task<IActionResult> Get()
         {
             try {

@@ -42,6 +42,5 @@ namespace SB.TelephoneNotes.BLL.Services
             var items = notesIQueryable.Skip((notesFilter.PageNumber - 1) * notesFilter.PageSize).Take(notesFilter.PageSize).ToList().MapToDomainModel();
             return PagedList<PhoneNote>.ToPagedList(items, count, notesFilter.PageNumber, notesFilter.PageSize);
         }
-      
     }
 }

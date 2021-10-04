@@ -7,6 +7,9 @@ namespace SB.TelephoneNotes.BLL.Mappers
     {
         public static NoteEntity MapToNoteEntity(this CreatePhoneNote createPhoneNoteCommand)
         {
+            if (createPhoneNoteCommand == null)
+                return null;
+
             return new NoteEntity()
             {
                 Name = createPhoneNoteCommand.Name,

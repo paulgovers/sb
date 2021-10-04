@@ -43,7 +43,6 @@ namespace SB.TelephoneNotes.BLL.Services
             await _notesRepository.Update(noteEntity);
             return noteEntity.MapToDomainModel(); ;
         }
-
         public async Task<PhoneNote> UpdateAssignedTo(int id, string assignedTo)
         {
             var noteEntity = await _notesRepository.Get(id);

@@ -27,8 +27,8 @@ namespace SB.TelephoneNotes.Api.Extentions
                     c.PostProcess = document =>
                     {
                         document.Info.Version = "v1";
-                        document.Info.Title = "Surebusiness Phone notes API";
-                        document.Info.Description = ".NET Core Web API for Phone Notes";
+                        document.Info.Title = "Surebusiness Telefoonnotities API";
+                        document.Info.Description = ".NET Core Web API voor het beheren van Telefoonnotities";
                         document.Info.TermsOfService = "None";
                     };
                 })
