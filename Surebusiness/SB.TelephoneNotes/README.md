@@ -81,4 +81,25 @@ GET /api/v1/phonenotes/{id}
 documentatie is te vinden op de volgende locatie: https://surebusiness.paulgovers.nl/swagger/index.html#/PhoneNotesV2/PhoneNotesV2_GetPagedAndFilter
 ```code
 GET /api/v2/phonenotes?status=afgehandeld&PageNumber=2&PageSize=10
+
+Example Response:
+{
+  "currentPage": 0,
+  "totalPages": 0,
+  "pageSize": 0,
+  "totalCount": 0,
+  "hasPrevious": true,
+  "hasNext": true,
+  "data": [
+    {
+      "id": 0,
+      "name": "string",
+      "notes": "string",
+      "phoneNumber": "string",
+      "status": "string",
+      "assignedTo": "string",
+      "createDate": "2021-10-04T12:24:03.899Z"
+    }
+  ]
+}
 ```
