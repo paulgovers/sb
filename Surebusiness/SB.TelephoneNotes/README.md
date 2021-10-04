@@ -13,10 +13,12 @@ De volgende acties worden ondersteund:
 * .NET Core 3.1
 * Visual Studio 2019
 * SqlServer
+* GIT
 
 # Installatie
 De volgende stappen moeten doorlopen worden om de API te draaien lokaal op je pc
 * start een command prompt en voer het volgende uit: git clone https://github.com/paulgovers/sb.git
+* Sla deze stap over als je met git clone de broncode hebt binnen gehaald. als je geen git hebt geinstalleerd, kan je als volgt downloaden: ga naar https://github.com/paulgovers/sb en klik op de knop "Code"
 * Solution openen met Visual studio 2019, Daarna rechter muis klik op de solution en vervolgens "Restore NuGet packages" selecteren
 * connection string aanpassen in config bestand: appsettings.Development.json, sql gebruiker heeft privileges nodig om Tabellen aan te mogen maken
 * SqlServer Database aanmaken 
@@ -25,7 +27,7 @@ De volgende stappen moeten doorlopen worden om de API te draaien lokaal op je pc
 De eerste keer nadat de applicatie start, zal er een tabel "Notes" worden aangemaakt en gevuld worden met 100 notities.
 
 # Api Documentatie
-Er is Api Swagger documentatie beschikbaar en tevens de mogelijkheid om met swagger de telefoonnotities API endpoint aan te roepen
+Er is Api Swagger documentatie beschikbaar en tevens de mogelijkheid om met swagger de telefoonnotities API endpoint aan te roepen. In de swagger interface ga je naar een specifiek endpoint en klik vervolgens op de knop "Try it out" om het endpoint aan te roepen.
 <br/>Swagger endpoint: https://localhost:44330/swagger
 <br/>De swagger documentatie beschrijft alle endpoints, er staat ook beschreven hoe je de endpoints kunt aanroepen maar ook welke responses je kunt verwachten en met de bijbehorende Http response code.
 
