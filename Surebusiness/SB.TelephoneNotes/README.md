@@ -1,4 +1,4 @@
-# Surebusiness Phone Notes API
+# Surebusiness Telefoonnotities API
 RESTful API voor het bijhouden van telefoonnotities.<br/>
 Notitie bestaan uit de volgende velden: Naam, notitie, telefoonnummer, status(nieuw | inbehandeling | afgehandeld), toegewezen medewerker
 
